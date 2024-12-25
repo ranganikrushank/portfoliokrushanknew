@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangani Krushank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo1.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo1.png">
+    <link id='favicon' rel="shortcut icon" href="images/logo1.png" type="image/x-png">
+</head>
+
+
+
+<div class="fixed bottom-2 left-6 z-50 flex space-x-2">
+    <!-- Sticky WhatsApp Icon -->
+    <a href="https://wa.me/7778888578" target="_blank"
+        class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition flex items-center justify-center">
+        <i class="fab fa-whatsapp text-3xl md:text-4xl lg:text-4xl"></i>
+    </a>
+</div>
+
+
+<!-- <div class="fixed bottom-2 right-0 transform -translate-x-1/2 z-50">
+    <a href="https://line.me/ti/p/cGbf8ukNkV" target="_blank"
+        class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition flex items-center justify-center">
+        <i class="fab fa-line text-3xl md:text-4xl lg:text-4xl"></i>
+    </a>
+</div> -->
+
+
+<!-- Back-to-Top Button -->
+<div class="fixed bottom-4 -right-2 transform -translate-x-1/2 z-50">
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+        class="bg-blue-700 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-4 h-4 md:w-4 md:h-4 font-bold">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7-7-7 7" />
+        </svg>
+    </button>
+</div>
+
+
+<!-- Back Button -->
+<div class="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+    <button onclick="history.back();"
+        class="bg-blue-800 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 transition flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="ml-2 font-medium">Go Back</span>
+    </button>
+</div>
+
+<body class="bg-gray-100">
+
+    <header
+        class="relative h-screen bg-cover bg-center
+        bg-[url('images/smallscreen.jpg')] md:bg-[url('images/largescreen.jpg')] lg:bg-[url('images/largescreen.jpg')]">
+        <!-- Logo -->
+        <div class="absolute top-4 left-4 z-10">
+            <img src="images/logo.png" alt="Logo" class="h-52 w-40 -mt-20 -ml-8 lg:-mt-28 lg:-ml-8 md:h-80 md:w-60">
+        </div>
+
+        <!-- Text on the Image -->
+        <div class="absolute top-32 md:top-60 lg:top-60 left-4 z-10 text-white">
+            <h1
+                class="text-2xl text-center text-lime-400 font-bold leading-tight md:text-3xl lg:text-4xl md:mr-36 lg:mr-0">
+                I'M Rangani Krushank</h1>
+            <p class="text-sm text-cyan-400 font-semibold text-center md:mt-2 lg:mt-2 md:text-2xl lg:text-xl">A
+                passionate Data Scientist</p>
+            <p class="mt-4 text-sm text-center leading-relaxed max-w-lg md:max-w-2xl lg:max-w-xl mt-8">
+                I am dedicated to solving complex problems using data-driven insights. With expertise in machine
+                learning, data analysis, and AI technologies, I am eager to apply my skills to real-world challenges and
+                make a meaningful impact.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex justify-center space-x-4 mt-8">
+                <a href="https://drive.google.com/file/d/1i46zTtysrBbsXjabAvNqH9ehoks0MkU6/view?usp=drive_link"
+                    target="_blank">
+                    <button
+                        class="bg-blue-700 text-white py-0 px-2 rounded-lg text-lg hover:bg-blue-400 transition duration-300">
+                        Resume
+                    </button>
+                </a>
+
+                <a href="#projects">
+                    <button
+                        class="bg-blue-700 text-white py-0 px-2 rounded-lg text-lg hover:bg-blue-400 transition duration-300">
+                        Projects
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+        <nav class="flex items-center justify-between px-6 py-4" id="home">
+            <!-- Nav Items -->
+            <ul class="ml-auto hidden md:flex space-x-12 space-y-4 mr-16 text-lg text-white font-semibold">
+                <li><a href=""></a></li>
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About Me</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                <li><a href="#whyme" class="hover:text-blue-500">Why Me</a></li>
+                <li><a href="#experience" class="hover:text-blue-500">Experience</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+
+            <!-- Social Media Icons (Visible on large screens) -->
+            <div class="hidden lg:flex space-x-6 text-white">
+                <!-- Replace these <a> tags with your actual social media links -->
+                <a href="https://www.facebook.com/rangani.krushank.5/" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/RanganiKru96550?t=BaBclc1eSo-j28yG9D7-bQ&s=09" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ranganikrushank/" class="hover:text-gray-300"><i class="fab fa-linkedin-in"></i></a>
+                <!-- <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a> -->
+                <a href="https://github.com/ranganikrushank" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+                <a href="mailto:krushankrangani29@gmail.com" class="text-gray-300 hover:text-blue-500"
+                    title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+91 7778888578" class="text-gray-300 hover:text-blue-500" title="Call">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden ml-auto">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu"
+            class="hidden flex flex-col space-y-4 p-4 bg-black text-white absolute top-16 left-0 w-full md:hidden z-50">
+            <li><a href="#home" class="text-white hover:text-gray-300">Home</a></li>
+            <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+            <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
+            <li><a href="#skills" class="text-white hover:text-gray-300">Skills</a></li>
+            <li><a href="#whyme" class="text-white hover:text-gray-300">Why Me</a></li>
+            <li><a href="#experience" class="text-white hover:text-gray-300">Experience</a></li>
+            <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4 mt-4">
+                <a href="https://www.linkedin.com/in/ranganikrushank/"
+                    class="text-gray-300 hover:text-blue-500" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/krushank.rangani/" class="text-gray-300 hover:text-blue-500"
+                    title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/rangani.krushank.5/"
+                    class="text-gray-300 hover:text-blue-500" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:krushankrangani29@gmail.com" class="text-gray-300 hover:text-blue-500"
+                    title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://g.page/Rangani Krushank" target="_blank" class="text-gray-300 hover:text-blue-500"
+                    title="Google"><i class="fab fa-google"></i></a>
+                <a href="tel:+91 7778888578" class="text-gray-300 hover:text-blue-500" title="Call">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://github.com/ranganikrushank" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+            </div>
+        </ul>
+
+
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-sky-700">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+            <!-- Image on the Left -->
+            <div class="flex-1 mb-8 lg:mb-0 lg:mr-8">
+                <img src="images/about.jpg" alt="About Image"
+                    class="w-full h-auto rounded shadow-lg bg-slate-500 slide-in float-left hover-enlarge">
+            </div>
+            <!-- Content on the Right -->
+            <div class="flex-1">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">About Me</h2>
+                <p class="text-black mb-4">I am a passionate Data Scientist with a strong foundation in
+                    statistical analysis, machine learning, and data visualization. I
+                    thrive on transforming complex datasets into actionable
+                    insights that drive decision-making and innovation. With
+                    experience across Data Science and Artificial Intelligence, I
+                    specialize in building predictive models, automating processes,
+                    and uncovering hidden patterns in data. I’m dedicated to
+                    continuous learning and enjoy solving challenging problems
+                    that create real-world impact.</p>
+                <a href="comingsoon.html">
+                    <button
+                        class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-400 transition duration-300">Certificates</button>
+                </a>
+                <a href="#whyme">
+                    <button
+                        class="bg-blue-900 text-white ml-8 px-4 py-2 rounded hover:bg-blue-400 transition duration-300">Why
+                        Me?</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-3xl font-bold text-gray-800 mb-8">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/AI.avif" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 1</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/ML.webp" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 2</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/python.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 3</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/data analysis.png" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 4</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/graphic design.png" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 4</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/freelance.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 4</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/web development.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 4</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/projects/powerbi.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <!-- <h3 class="text-lg font-semibold text-gray-700">Project 4</h3> -->
+                        <a href="comingsoon.html">
+                            <button
+                            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                            View Projects
+                        </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Repeat for more projects -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-sky-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-black mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">AI Development</h3>
+                        <p class="text-black text-center mt-2">Experienced in developing AI solutions using machine
+                            learning, deep learning, and natural language processing to solve real-world problems and
+                            enhance user experiences.</p>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Web Development</h3>
+                        <p class="text-black text-center mt-2">Proficient in creating responsive and dynamic websites
+                            with expertise in HTML, CSS, JavaScript.</p>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Backend Development
+                        </h3>
+                        <p class="text-black text-center mt-2">Skilled in server-side programming with Python, Flask,
+                            and Node.js, along with database management using MySQL and MongoDB.</p>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Power BI</h3>
+                        <p class="text-black text-center mt-2">Experienced in building interactive and insightful data
+                            visualizations and dashboards using Power BI, with expertise in data modeling, DAX, and
+                            integrating multiple data sources.</p>
+                    </div>
+                </div>
+                <!-- Skill 5 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Business Analyst
+                        </h3>
+                        <p class="text-black text-center mt-2">Proficient in analyzing business processes and
+                            requirements, creating detailed documentation, and designing impactful data-driven reports
+                            using tools like Microsoft Excel, SQL, and Power BI. </p>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Data Analysis</h3>
+                        <p class="text-black text-center mt-2">Experienced in analyzing and visualizing data with
+                            Python, R, and SQL to provide actionable insights for business and research purposes.</p>
+                    </div>
+                </div>
+                <!-- Skill 7 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Python Developer
+                        </h3>
+                        <p class="text-black text-center mt-2">Experienced in developing robust applications and
+                            automation scripts using Python, with expertise in frameworks like Django, Flask, and
+                            FastAPI. Skilled in writing clean, efficient code, integrating APIs, and optimizing backend
+                            processes to support scalable solutions.</p>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Business Development
+                            Executive</h3>
+                        <p class="text-black text-center mt-2">Experienced in identifying growth opportunities and
+                            building strong client relationships to drive business expansion and revenue. Skilled in
+                            market research, lead generation, and developing strategic partnerships to support business
+                            objectives and achieve sales targets.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-900 text-center hover:text-cyan-800">Graphic Design</h3>
+                        <p class="text-black text-center mt-2">Proficient in designing visually appealing graphics and
+                            branding materials using Adobe Photoshop, Illustrator, and Canva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WHY ME SECTION -->
+    <section id="whyme" class="py-16 bg-white" style="background-size: cover; background-position: center;">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-black mb-12">Why Me</h2>
+            <!-- Grid for Images -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="bg-gray-200 rounded-lg shadow-2xl p-4">
+                    <img src="images/whyme/time.jpg" alt="Always on time" class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="text-sky-900 mt-4 font-bold">Always on Time</p>
+                </div>
+                <!-- Reason 2 -->
+                <div class="bg-gray-200 rounded-lg shadow-2xl p-4">
+                    <img src="images/whyme/best solution.png" alt="Best Solutions"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="text-sky-900 mt-4 font-bold">Best Solutions</p>
+                </div>
+                <!-- Reason 3 -->
+                <div class="bg-gray-200 rounded-lg shadow-2xl p-4">
+                    <img src="images/whyme/uniqueness.jpg" alt="Less Cost"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="text-sky-900 mt-4 font-bold">Unique Ideas</p>
+                </div>
+                <!-- Reason 4 -->
+                <div class="bg-gray-200 rounded-lg shadow-2xl p-4">
+                    <img src="images/whyme/long term.jpg" alt="Long Term Partnership"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="text-sky-900 mt-4 font-bold">Long Term Partnership</p>
+                </div>
+                <!-- Reason 5 -->
+                <div class="bg-gray-200 rounded-lg shadow-2xl p-4">
+                    <img src="images/whyme/low cost.jpg" alt="Custom Solutions"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="text-sky-900 mt-4 font-bold">Custom Solutions</p>
+                </div>
+                <!-- Reason 6 -->
+                <div class="bg-gray-200 rounded-lg shadow-2xl p-4">
+                    <img src="images/whyme/dedicated support.png" alt="24/7 Support"
+                        class="w-full h-48 object-cover rounded-t-lg">
+                    <p class="text-sky-900 mt-4 font-bold">24/7 Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-16 bg-sky-700">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-black mb-12">My Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Experience Item 1 -->
+                <div
+                    class="bg-sky-400 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 p-4 cursor-pointer">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Freelancer</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Atlancia Worldwide</h4>
+                    <p class="text-gray-600 mb-2">Location: Surat, Gujarat, India</p>
+                    <p class="text-black">As a freelance developer, I have successfully designed and implemented various
+                        software and AI tools tailored to meet my clients' unique needs. My projects have ranged from
+                        developing machine learning applications to creating custom software solutions that enhance
+                        productivity and efficiency.</p>
+                    <p class="text-gray-500 text-sm mt-2">Dates : March 2024 - Present</p>
+                </div>
+                <!-- Experience Item 2 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 p-4 cursor-pointer">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI ML Engineer</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Avinashi</h4>
+                    <p class="text-gray-600 mb-2">Location: Surat, Gujarat, India</p>
+                    <p class="text-black">During my time at Avinashi, I focused on driving innovation for both personal
+                        growth and the organization. I gained extensive knowledge in AI and machine learning while
+                        working on various unique projects that enhanced operational efficiency and delivered impactful
+                        solutions.</p>
+                    <p class="text-gray-500 text-sm mt-2">Dates: June 2024 - July 2024</p>
+                </div>
+                <!-- Experience Item 3 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 p-4 cursor-pointer">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI ML Engineer</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Innovative Solutions</h4>
+                    <p class="text-gray-600 mb-2">Location: Surat, Gujarat, India</p>
+                    <p class="text-black">As an AI/ML Engineer, I developed and implemented machine learning models to
+                        solve complex business problems, enhancing data-driven decision-making. collaborated with
+                        cross-functional teams to integrate AI solutions into existing systems, driving innovation and
+                        improving operational efficiency.</p>
+                    <p class="text-gray-500 text-sm mt-2">Dates Employed: March 2023 - December 2023</p>
+                </div>
+                <!-- Experience Item 4 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 p-4 cursor-pointer">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI Software Developer</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Tech Solutions</h4>
+                    <p class="text-gray-600 mb-2">Location: Surat, Gujarat, India</p>
+                    <p class="text-black">
+                        As an AI Software Engineer, I designed and implemented machine learning models and algorithms to
+                        solve complex problems and enhance system capabilities. I developed scalable AI solutions and
+                        integrated them into existing applications. My role involved optimizing algorithms for
+                        performance and accuracy, as well as conducting experiments to validate model effectiveness.</p>
+                    <p class="text-gray-500 text-sm mt-2">Dates Employed: February 2022 - October 2022</p>
+                </div>
+                <!-- Experience Item 5 -->
+                <div
+                    class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 p-4 cursor-pointer">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Software Developer</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 mb-1">Saffron Infotech</h4>
+                    <p class="text-gray-600 mb-2">Location: Surat, Gujarat, India</p>
+                    <p class="text-black">As a Software Engineer, I developed and maintained robust applications,
+                        ensuring high performance and responsiveness across platforms. Collaborating with
+                        cross-functional teams, I implemented efficient coding practices and contributed to system
+                        architecture design. My role involved debugging, optimizing code.</p>
+                    <p class="text-gray-500 text-sm mt-2">Dates Employed: January 2021 - December 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT SCETION -->
+    <div class="bg-gray-100 p-6" id="contact">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
+            <!-- Left Side: Company Info -->
+            <div class="md:w-1/3 mb-6 md:mb-0">
+                <h1 class="text-2xl font-bold cursor-pointer">Rangani Krushank</h1>
+                <p class="text-stone-900 font-semibold text-sm">I believe in long and sustainable relationships</p>
+                <br>
+                <p class="text-gray-600 text-sm">Surat, Gujarat, India</p>
+                <p class="text-gray-600 text-sm">
+                    Email: <a href="mailto:krushankrangani29@gmail.com"
+                        class="text-blue-500 hover:text-sky-700 hover:underline text-sm">krushankrangani29@gmail.com</a>
+                </p>
+            </div>
+
+            <!-- Middle: Quick Links -->
+            <div class="md:w-1/3 mb-6 md:mb-0">
+                <h2 class="text-lg font-semibold">Quick Links</h2>
+                <ul class="mt-2 space-y-1">
+                    <li><a href="#about" class="hover:text-blue-500 text-black">About Me</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500 text-black">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-blue-500 text-black">Skills</a>
+                    </li>
+                    <li><a href="#experience" class="hover:text-blue-500 text-black">Experience</a>
+                    </li>
+                    <li><a href="https://drive.google.com/file/d/1i46zTtysrBbsXjabAvNqH9ehoks0MkU6/view?usp=drive_link"
+                            target="_blank" class="hover:text-blue-500 text-black">Resume</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Social Media & Contact Info -->
+            <div class="md:w-1/3 flex flex-col items-start">
+                <h2 class="text-lg font-semibold">Contact Us</h2>
+                <p class="text-gray-600 mt-2">
+                    Phone: <a href="tel:+917778888578"
+                        class="text-blue-500 hover:text-sky-700 hover:underline text-sm">+91 7778888578</a>
+                </p>
+                <br>
+                <h4 class="mt-4 text-lg font-semibold">Follow Us</h4>
+                <div class="flex mt-2 space-x-4">
+                    <a href="https://www.instagram.com/krushank.rangani/" target="_blank" class="text-pink-500"
+                        title="Instagram"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="https://www.facebook.com/rangani.krushank.5/" target="_blank" class="text-blue-500"
+                        title="Facebook"><i class="fab fa-facebook text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/ranganikrushank/" target="_blank" class="text-blue-700"
+                        title="LinkedIn"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="https://x.com/RanganiKru96550?t=BaBclc1eSo-j28yG9D7-bQ&s=09" target="_blank"
+                        class="text-blue-500" title="Twitter"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="https://github.com/ranganikrushank" target="_blank" class="text-black" title="GitHub"><i
+                            class="fab fa-github text-2xl"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Include FontAwesome for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <!-- Footer Section -->
+    <footer class="content-section py-4 bg-gray-900 text-center text-white text-sm">
+        <p>&copy; 2024 Rangani Krushank. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutImage = document.getElementById("about-image");
+
+            // Create the observer with IntersectionObserver API
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        aboutImage.classList.add("opacity-100", "translate-x-0");
+                        observer.unobserve(aboutImage); // Stop observing after animation
+                    }
+                });
+            });
+
+            // Observe the image element
+            observer.observe(aboutImage);
+        });
+
+
+        // Toggle mobile menu visibility
+        menuButton.addEventListener('click', (event) => {
+            mobileMenu.classList.toggle('hidden');
+            event.stopPropagation(); // Prevent the menu from closing immediately after opening
+        });
+
+        // Close the mobile menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = mobileMenu.contains(event.target) || menuButton.contains(event.target);
+            if (!isClickInsideMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking a menu item
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling functionality for various sections
+        const smoothScroll = (selector) => {
+            document.querySelector(selector).scrollIntoView({
+                behavior: 'smooth'
+            });
+        };
+
+        document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#about');
+        });
+
+        document.querySelector('a[href="#skills"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#skills');
+        });
+
+        document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#contact');
+        });
+
+        document.querySelector('a[href="#projects"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#projects');
+        });
+
+        document.querySelector('a[href="#whyme"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#whyme');
+        });
+        document.querySelector('a[href="#certificates"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#certificates');
+        });
+        document.querySelector('a[href="#experience"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#experience');
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select the image element inside the about section
+            const aboutImage = document.querySelector("#about img");
+
+            // Create the IntersectionObserver to detect when the image enters the viewport
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Add the slide-in-visible class to trigger the animation
+                        entry.target.classList.add("slide-in-visible");
+                        // Stop observing once the animation is triggered
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            // Observe the image element for intersection
+            observer.observe(aboutImage);
+        });
+    </script>
+</body>
+
+</html>
